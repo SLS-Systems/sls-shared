@@ -22,6 +22,7 @@ from sls_shared.models.supervision import Supervision
 from sls_shared.models.shift import Shift, ShiftPattern, StaffAvailability, ShiftSwap
 from sls_shared.models.notification import NotificationPreference, NotificationLog
 from sls_shared.models.portal import PortalUser, PortalResidentAccess, PortalMessage, ProfessionalNote
+from sls_shared.models.oncall import OncallRota, OncallLog, EscalationChain
 
 __all__ = [
     "Organisation", "Profile", "Service", "Resident", "CareNote",
@@ -34,4 +35,5 @@ __all__ = [
     "Shift", "ShiftPattern", "StaffAvailability", "ShiftSwap",
     "NotificationPreference", "NotificationLog",
     "PortalUser", "PortalResidentAccess", "PortalMessage", "ProfessionalNote",
+    "OncallRota", "OncallLog", "EscalationChain",
 ]
