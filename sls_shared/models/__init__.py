@@ -20,6 +20,7 @@ from sls_shared.models.audit import Audit
 from sls_shared.models.staff_compliance import StaffCompliance, TrainingRecord
 from sls_shared.models.supervision import Supervision
 from sls_shared.models.shift import Shift, ShiftPattern, StaffAvailability, ShiftSwap
+from sls_shared.models.notification import NotificationPreference, NotificationLog
 
 __all__ = [
     "Organisation", "Profile", "Service", "Resident", "CareNote",
@@ -30,4 +31,5 @@ __all__ = [
     "HSCheck", "Incident", "Audit",
     "StaffCompliance", "TrainingRecord", "Supervision",
     "Shift", "ShiftPattern", "StaffAvailability", "ShiftSwap",
+    "NotificationPreference", "NotificationLog",
 ]
