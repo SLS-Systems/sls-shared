@@ -13,9 +13,10 @@ elif "postgresql://" in db_url and "+psycopg" not in db_url:
 
 engine = create_async_engine(
     db_url,
-    pool_size=3,
-    max_overflow=5,
+    pool_size=1,
+    max_overflow=2,
     pool_pre_ping=True,
+    pool_recycle=300,
 )
 
 async_session = async_sessionmaker(engine, class_=AsyncSession, expire_on_commit=False)
